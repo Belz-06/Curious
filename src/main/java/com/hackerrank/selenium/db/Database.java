@@ -33,18 +33,22 @@ public class Database {
       throw new RuntimeException(e);
     } finally {
       try {
-        statement.close();
-        connection.close();
-      } catch (SQLException e) {
-        e.printStackTrace();
-      }
+        if (statement != null) {
+          statement.close();   }
+        if (connection != null) {
+          connection.close(); }
+          }
+          catch (SQLException e) {
+            e.printStackTrace();
+          }
+    
+
     }
   }
 
   // fetch all the cards from cards table
   public static List<Card> fetchCards() {
-    // TODO
-    return null;
+        return null;
   }
 
   // do not modify

@@ -17,7 +17,6 @@ import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;
 import org.openqa.selenium.WebDriver;
-
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 public class AppTests {
   private static JettyServer server = null;
